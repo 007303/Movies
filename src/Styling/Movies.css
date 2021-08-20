@@ -1,0 +1,116 @@
+@media only screen and (max-width: 600px) {
+    .poster{
+        position: relative;
+        height: 40vh;
+        width:100%;
+    }
+    .exit{
+        background-color: white;
+        margin: 1rem 1rem;
+        height:5vh;
+        width:2.5rem;
+        align-self: flex-end;
+        padding-left: 0.5rem;
+        }
+    .Modalposter{
+        position: relative;
+        margin-left: 15rem;
+        height: 52vh;
+        align-self:center;
+        }
+        .cast{
+            text-align:center;
+            margin-top:-1rem;
+            font-weight: bold;
+        }
+    .director{
+    position: relative;
+    text-align: center;
+    margin-top:-1rem;
+    font-weight: bold;
+    }
+    .runTime{
+        position: relative;
+        text-align: center;
+        margin-top:-1rem;
+        font-weight: bold;
+    }
+    .rating{
+        position: relative;
+        text-align: center;
+        margin-top:-1rem;
+        font-weight: bold;
+    }
+    .releasedOn{
+        position: relative;
+        text-align: center;
+        margin-top:-1rem;
+        font-weight: bold;
+    }
+    .view_details{
+    position: relative;
+    margin-top: -1rem;
+    text-align: center;
+    }
+    }
+@media only screen and (min-width: 1200px) {
+.poster{
+    position: relative;
+    height: 40vh;
+    width:100%
+}
+.exit{
+    background-color: white;
+    margin: 1rem 1rem;
+    height:5vh;
+    width:2.5rem;
+    align-self: flex-end;
+    padding-left: 0.5rem;
+    }
+.Modalposter{
+    position: relative;
+    margin-left: 15rem;
+    height: 52vh;
+    align-self:center;
+    }
+    .cast{
+        text-align:center;
+        margin-top:-1rem;
+        font-weight: bold;
+    }
+.director{
+position: relative;
+text-align: center;
+margin-top:-1rem;
+font-weight: bold;
+}
+.runTime{
+    position: relative;
+    text-align: center;
+    margin-top:-1rem;
+    font-weight: bold;
+}
+.rating{
+    position: relative;
+    text-align: center;
+    margin-top:-1rem;
+    font-weight: bold;
+}
+.releasedOn{
+    position: relative;
+    text-align: center;
+    margin-top:-1rem;
+    font-weight: bold;
+}
+.view_details{
+position: relative;
+margin-top: -1rem;
+text-align: center;
+}
+.search{
+    position: absolute;
+    width:2.5rem;
+    height: 6vh;
+    margin-left: -3rem;
+}
+}
