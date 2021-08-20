@@ -1,6 +1,5 @@
 import React,{useEffect} from 'react'
 import {Card, CardBody,CardLink,CardTitle} from 'reactstrap';
-import exit from '../pictures/exit.jpg'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 const CardLayout=(props)=>{
@@ -9,7 +8,7 @@ const CardLayout=(props)=>{
       Aos.init({duration:1000})
   },[])
     return(
-        <div class="col-md-4 col-9" >
+        <div class="col-lg-4 col-md-4 col-9" >
         <div class="card-deck mt-3 "  >
         <Card data-aos="slide-left">
         <CardBody>

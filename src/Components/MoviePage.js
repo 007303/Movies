@@ -75,10 +75,10 @@ const MoviePage=(props)=>{
     return(
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-8 mt-5">
+                <div class=" col-lg-8 col-md-8 col-8 mt-5">
                 <h1>WOOKIE<br/>MOVIES</h1>
                 </div>
-                <div class="col-md-4 col-4 mt-5">
+                <div class="col-lg-4 col-md-4 col-4 mt-5">
                 <img src={Search} class="search" /><Input type="text" value={search} placeholder="Search" onChange={handleSearch}/>
                 </div>
             </div>
