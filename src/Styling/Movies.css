@@ -52,6 +52,12 @@
     margin-top: -1rem;
     text-align: center;
     }
+    .search{
+        position: absolute;
+        width:2.5rem;
+        height: 4.4vh;
+        margin-left: -3rem;
+    }
     }
 @media only screen and (min-width: 1200px) {
 .poster{

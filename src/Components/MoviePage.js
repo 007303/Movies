@@ -6,7 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../Styling/Movies.css'
 import Modaal from './Modaal'
 import Search from  '../pictures/Search.svg'
-import {Modal} from 'react-bootstrap'
 import { Input } from 'reactstrap';
 import Aos from 'aos'
 import "aos/dist/aos.css"
@@ -26,11 +25,9 @@ const MoviePage=(props)=>{
     const movies=useSelector((state)=>{
         return state.Movies.movies
     })
-
     useEffect(()=>{
         setMovieData(movies)
-        console.log(movieData)
-        
+        console.log(movieData)  
     },[movies])
     data.genre1=movieData &&  movieData.filter((ele)=>{
       if(ele.genres.includes("Action")){
@@ -79,7 +76,7 @@ const MoviePage=(props)=>{
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-8 mt-5">
-                <h1>Wookie<br/>Movies</h1>
+                <h1>WOOKIE<br/>MOVIES</h1>
                 </div>
                 <div class="col-md-4 col-4 mt-5">
                 <img src={Search} class="search" /><Input type="text" value={search} placeholder="Search" onChange={handleSearch}/>
@@ -87,15 +84,15 @@ const MoviePage=(props)=>{
             </div>
 
             <hr/>
-        <div class="row" style={{width: '70rem'}}>
-        {data.genre1 && <h3 style={{marginTop:"1rem"}} data-aos="zoom-out">Genre:Action</h3>}
-        { data.genre1 &&  data.genre1.map((ele)=>{
-                return(
-                   <CardLayout ele={ele} handleModal={handleModal} />
-                )
-            
-            })}
-             
+
+            <div class="row" style={{width: '70rem'}}>
+                {data.genre1 && <h3 style={{marginTop:"1rem"}} data-aos="zoom-out">Genre:Action</h3>}
+                { data.genre1 &&  data.genre1.map((ele)=>{
+                        return(
+                        <CardLayout ele={ele} handleModal={handleModal} />
+                        )
+                    
+                    })}   
              </div>
 
              {data.genre2 && <h3 style={{marginTop:"1rem"}} data-aos="zoom-out">Genre:Animation</h3>}
@@ -127,6 +124,7 @@ const MoviePage=(props)=>{
             
             })}
             </div>
+
             {data.genre5 && <h3 style={{marginTop:"1rem"}} data-aos="zoom-out"> Genre:Action</h3>}
             <div class="row" style={{width: '70rem'}}>
              { data.genre5 &&  data.genre5.map((ele)=>{
@@ -137,7 +135,6 @@ const MoviePage=(props)=>{
             })}
             </div>
             
-
              <Modaal readMore={readMore} handleToggle={handleToggle} modalData={modalData}/>
                   </div>
     )
